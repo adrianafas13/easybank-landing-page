@@ -3,7 +3,7 @@
     //hamburguer open styles
     &.open{
 
-        .header__menu{
+        .header__toggle{
             > span:first-child{
                 transform: rotate(45deg);
             }
@@ -26,10 +26,9 @@
         background: linear-gradient($darkBlue, transparent);
     }
 
-
-
     nav{
-        padding: 1.0625rem 1.5rem;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
     }
 
     &__logo{
@@ -39,7 +38,7 @@
             }
     }
 
-    &__menu{ //mobile menu
+    &__toggle{ //mobile menu
         > span{
             display:block;
             width: 26px;
@@ -51,6 +50,17 @@
             &:not(:last-child){
                 margin-bottom: 5px;
             }
+        }
+    }
+
+    &__menu{
+        background: $white;
+        padding: 1.625rem;
+        a{
+            display: block;
+            color: $darkBlue;
+            padding: 0.625rem;
+            text-align: center;
         }
     }
 
